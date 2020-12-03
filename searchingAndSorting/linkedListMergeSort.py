@@ -27,7 +27,7 @@ def merge_sort(S):
   
   while len(S1) < n//2: # Move the first n//2 elements to S1
     S1.enqueue(S.dequeue())
-  white not S.is_empty(): # Move the rest to S2
+  while not S.is_empty(): # Move the rest to S2
     S2.enqueue(S.dequeue())
   
   merge_sort(S1) # Sorts first half
