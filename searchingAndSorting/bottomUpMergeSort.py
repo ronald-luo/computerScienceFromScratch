@@ -26,7 +26,7 @@ def merge sort(S):
 	for i in (2 k for k in range(logn)): # pass i creates all runs of length 2i
 		for j in range(0, n, 2 i): # each pass merges two length i runs
 			merge(src, dest, j, i)
-    src, dest = dest, src # reverse roles of lists
+    		src, dest = dest, src # reverse roles of lists
 	
 	if S is not src:
 		S[0:n] = src[0:n] # additional copy to get results to S
