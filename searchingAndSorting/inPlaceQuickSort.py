@@ -17,9 +17,9 @@ def inplace quick sort(S, a, b):
 		while left <= right and pivot < S[right]:
 			right −= 1
 
-	if left <= right: # scans did not strictly cross
-		S[left], S[right] = S[right], S[left] # swap values
-		left, right = left + 1, right − 1 # shrink range
+		if left <= right: # scans did not strictly cross
+			S[left], S[right] = S[right], S[left] # swap values
+			left, right = left + 1, right − 1 # shrink range
 
 	# put pivot into its final place (currently marked by left index)
 	S[left], S[b] = S[b], S[left]
