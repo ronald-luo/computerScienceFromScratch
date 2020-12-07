@@ -1,7 +1,6 @@
 def merge(S1, S2, S): 
   # Merges S1 and S2 into empty queue S
   
-  
   while not S1.is_empty() and not S2.is_empty():
     if S1.first() < S2.first():
       S.enqueue(S1.dequeue())
